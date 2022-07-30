@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    font-size: 16px;
+    background: rgb(0, 58, 68);
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrap {
+    width: 40%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.formulario h2 {
+    font-size: 25px;
+    color: rgb(255, 183, 0);
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.formulario > div {
+    padding: 30px 0;
+    border-bottom: 1px solid rgb(255, 183, 0);
+}
+
+.formulario input[type="radio"],
+.formulario input[type="checkbox"] {
+    display: none; 
+}
+
+.formulario .radio label,
+.formulario .checkbox label {
+    color: rgb(255, 183, 0);
+    background: rgba(255, 183, 0, 0.1);
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 7px;
+    cursor: pointer;
+   transition: all 0.3s;
+}
+
+.formulario .radio label:hover,
+.formulario .checkbox label:hover {
+    background: rgba(255, 183, 0, 0.4);
+}
+
+.formulario .radio label:before,
+.formulario .checkbox label:before {
+    content: '';
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 4px solid rgb(255, 183, 0);
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 4px;
+}
+
+.formulario .checkbox label:before {
+    border-radius: 3px;
+}
+
+.formulario input[type="radio"]:checked + label,
+.formulario input[type="checkbox"]:checked + label {
+    padding: 5px 15px;
+    background: rgb(255, 183, 0);
+    border-radius: 6px;
+    color: white;
+}
+
+.formulario input[type="radio"]:checked + label::before,
+.formulario input[type="checkbox"]:checked + label::before {
+    display: none;
+}
